@@ -1,0 +1,11 @@
+@extends('layouts.frontend.master')
+@section('content')
+    @include('frontend.pages.home.slider')
+    @include('frontend.pages.home.booking')
+    @include('frontend.pages.home.rooms')
+    @include('frontend.pages.home.facilities')
+    @include('frontend.pages.home.blog')
+    @include('frontend.pages.home.near')
+    @include('frontend.pages.home.apartment')
+    @include('frontend.pages.home.testimonial')
+@endsection
