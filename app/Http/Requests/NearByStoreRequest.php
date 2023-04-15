@@ -28,7 +28,7 @@ class NearByStoreRequest extends FormRequest
             'image' => 'required|image',
 
             'button_title.*' => 'required|string|max:20',
-            'button_url.*' => 'url|nullable|max:555',
+            'button_url.*' => 'url|required|max:555',
         ];
     }
 }

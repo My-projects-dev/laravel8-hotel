@@ -94,7 +94,10 @@ class BookingController extends Controller
         $data['discountt'] = $discountt;
         $data['tax'] = $tax;
 
-       session(['reservation' => $data]);
+        session(['reservation' => $data]);
+        if (session()->has('checkout')) {
+            session()->forget('checkout');
+        }
 
         return redirect()->route('front.reservation');
     }
@@ -178,7 +181,7 @@ class BookingController extends Controller
             return redirect()->back();
         }
 
-        return view('frontend.pages.reservation.checkout', compact('checkout','reservation'));
+        return view('frontend.pages.reservation.checkout', compact('checkout', 'reservation'));
     }
 
 
