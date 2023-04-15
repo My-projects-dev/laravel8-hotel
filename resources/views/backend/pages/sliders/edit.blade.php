@@ -93,7 +93,7 @@
 
                                                 Star<br>
                                                 <select class="custom-select form-control mb-3" id="star" name="star">
-                                                    <option value="1" {{($slider->parentSlider->star == 0) ? 'selected' : ''}}>Chouse slider</option>
+                                                    <option value="0" {{($slider->parentSlider->star == 0) ? 'selected' : ''}}>Chouse slider</option>
                                                     <option value="1" {{($slider->parentSlider->star == 1) ? 'selected' : ''}}>1</option>
                                                     <option value="2" {{($slider->parentSlider->star == 2) ? 'selected' : ''}}>2</option>
                                                     <option value="3" {{($slider->parentSlider->star == 3) ? 'selected' : ''}}>3</option>

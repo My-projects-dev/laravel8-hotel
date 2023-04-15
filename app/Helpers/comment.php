@@ -32,6 +32,7 @@ if (!function_exists('comment')) {
         }
 
         $comment = Cache::get('comment-count');
+        $comment = $comment>0 ? $comment : "";
 
         return $comment;
     }
