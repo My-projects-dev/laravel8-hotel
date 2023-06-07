@@ -98,6 +98,7 @@ Route::group(['prefix' => '{language?}', 'middleware' => 'language'], function (
     Route::get('blog/{slug?}', [BlogFront::class, 'show'])->name('front.blog');
     Route::get('about', [AboutFront::class, 'index'])->name('front.about');
     Route::get('contact', [ContactFront::class, 'index'])->name('front.contact');
+    Route::post('contact/store', [ContactFront::class, 'store'])->name('front.contact.store');
     Route::get('facility', [FacilityFront::class, 'index'])->name('front.facility');
     Route::get('rooms', [RoomFront::class, 'index'])->name('front.rooms');
     Route::match(['get', 'post'],'rooms/booking', [RoomFront::class, 'search'])->name('front.rooms.booking');

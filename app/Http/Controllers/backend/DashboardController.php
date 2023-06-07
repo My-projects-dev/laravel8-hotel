@@ -10,7 +10,8 @@ class DashboardController extends Controller
     public function index()
     {
 
-        $page = 'Dashboard';
-        return view('backend.pages.dashboard.dashboard', compact( 'page'));
+        return redirect()->route('reservation.index');
+//        $page = 'Dashboard';
+//        return view('backend.pages.dashboard.dashboard', compact( 'page'));
     }
 }

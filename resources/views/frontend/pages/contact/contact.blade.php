@@ -45,7 +45,7 @@
                                                data-text-close="@lang('frontend.contact button title2')">@lang('frontend.contact button title')</a>
 
                                             <div class="contact-form clearfix">
-                                                <form action="{{route('comment.store')}}" method="post"
+                                                <form action="{{route('front.contact.store', app()->getLocale())}}" method="post"
                                                       enctype="multipart/form-data">
                                                     @csrf
                                                     <div class="row">
